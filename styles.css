@@ -1,0 +1,266 @@
+body {
+  background-color: rgb(0, 0, 31);
+  color: darkolivegreen;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.body-app {
+  display: block;
+  position: relative;
+  padding-top: 30px;
+  top: 0px;
+  width: 100%;
+  height: 1000px;
+}
+.opacity {
+  opacity: 0%;
+}
+.hidden {
+  display: none;
+}
+
+.top-bar {
+  position: relative;
+  display: flex;
+  margin-top: -35px;
+  padding-top: 20px;
+  height: 25%;
+  background-image: linear-gradient(
+    to top left,
+    rgb(44, 10, 10) 0%,
+    rgb(1, 1, 42) 100%
+  );
+}
+.cur-location {
+  border: 3px solid darkolivegreen;
+  border-radius: 5px;
+  background-color: darkolivegreen;
+  right: 0%;
+  margin-left: 600px;
+}
+.btn {
+  height: 31px;
+}
+#location-inp {
+  border: 3px solid darkolivegreen;
+  border-radius: 5px;
+  margin-left: 700px;
+  height: 25px;
+}
+.search-btn {
+  border: 3px solid darkolivegreen;
+  border-radius: 5px;
+  background-color: darkolivegreen;
+  width: 50px;
+  margin-left: 10px;
+}
+.search-icon {
+  width: 25px;
+}
+.title-text {
+  font-size: 15px;
+  display: initial;
+  position: relative;
+  top: 100px;
+  margin-left: -300px;
+}
+.title {
+  font-size: 40px;
+  display: initial;
+  position: relative;
+  margin-left: 50px;
+  width: 300px;
+}
+.country {
+  font-size: 20px;
+  display: initial;
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+}
+.city {
+  font-size: 20px;
+  display: initial;
+  position: absolute;
+  left: 52%;
+  top: 25%;
+}
+
+.astro-container {
+  transition: 0.2s;
+
+  margin-top: -21px;
+  text-align: center;
+  background-image: linear-gradient(
+    to top right,
+    rgb(1, 1, 42) 0%,
+    rgb(44, 10, 10) 100%
+  );
+  width: 100%;
+  height: 200%;
+}
+
+.astro-data {
+  list-style-type: none;
+}
+.forecasts-container {
+  transition: 0.2s;
+
+  background-color: rgb(250, 242, 171);
+  border: solid 5px rgb(80, 5, 5);
+  border-radius: 20%;
+  opacity: 70%;
+  margin-left: 25%;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  overflow: auto;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.forecasts {
+  transition: 0.2s;
+
+  transition: transform 2s;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 0, 0);
+  /* margin-left: %; */
+  /* opacity: 50%; */
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgb(102, 26, 26); */
+  text-align: center;
+  margin-left: -30px;
+}
+
+.overlay {
+  transition: 0.2s;
+
+  display: flex;
+  transition: transform 0.2s;
+  position: relative;
+  display: none;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+
+  bottom: 0px;
+  /* background-image: url("./images/weather images/rainy.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 10;
+}
+
+.dat {
+  font-size: 25px;
+}
+.date {
+  font-size: 30px;
+  font-weight: bolder;
+}
+.btns-days {
+  position: relative;
+  border: 3px solid darkolivegreen;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  border-radius: 10px;
+  height: 30px;
+  top: 60px;
+  left: 70px;
+}
+.top-btn {
+  border: 3px solid darkolivegreen;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border-radius: 10px;
+  position: relative;
+  top: 60%;
+}
+.btn-forecasts {
+  top: 75%;
+  left: 140%;
+  margin-top: -2px;
+}
+.btn-astro {
+  top: 75%;
+  left: 150%;
+}
+
+.close-forecasts {
+  border: 2px solid darkolivegreen;
+  font-weight: bolder;
+  position: relative;
+  left: 85%;
+}
+
+.btn-today {
+  font-weight: bolder;
+}
+
+.astro-title {
+  font-size: 50px;
+}
+.astro-el {
+  font-size: 30px;
+  position: relative;
+  top: 200px;
+}
+
+.illumination-img {
+  width: 60%;
+  float: left;
+  margin-top: 50px;
+}
+.illumination {
+  margin-bottom: -130px;
+  margin-left: -1300px;
+  font-size: 50px;
+}
+
+.astronomy-main-img {
+  margin-bottom: 50px;
+}
+
+.moon-phase {
+  margin-top: 30%;
+  right: 15%;
+  margin-right: -40px;
+}
+
+.phase-img {
+  width: 45%;
+  float: right;
+  margin-top: 50px;
+}
+
+.welcome-page {
+  transition: 3s;
+  background-image: linear-gradient(
+    to top right,
+    rgb(1, 1, 42) 0%,
+    rgb(44, 10, 10) 100%
+  );
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  text-align: center;
+  z-index: 2;
+}
+.welcome-text {
+  font-size: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-left: -300px;
+  margin-top: -100px;
+}

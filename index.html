@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Weather</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer type="module" src="./src/controller.js"></script>
+  </head>
+  <body>
+    <div class="welcome-page">
+      <h1 class="welcome-text">My Weather</h1>
+    </div>
+    <div class="body-app">
+      <div class="top-bar">
+        <h1 class="title">My Weather</h1>
+        <p class="title-text">
+          All predictions and forecasts about weather and astronomy at location
+          of your choice!
+        </p>
+        <div>
+          <p class="country">Malta</p>
+          <p class="city">Marsaskala</p>
+        </div>
+        <div>
+          <button class="top-btn btn-forecasts">See Weather</button>
+          <button class="top-btn btn-astro">See Astro</button>
+        </div>
+        <!-- <button class="btn cur-location">Current location</button> -->
+        <form class="location-form">
+          <input
+            type="text"
+            placeholder="choose location"
+            name=""
+            id="location-inp"
+          />
+        </form>
+        <button class="btn search-btn">
+          <img class="search-icon" src="./images/search-icon.png" />
+        </button>
+      </div>
+      <div class="overlay">
+        <div class="forecasts-container">
+          <div class="forecast-btns">
+            <button class="btns-days btn-today">Today</button>
+            <button class="btns-days btn-3days">3 Days</button>
+            <button class="btns-days btn-hourly">Hourly</button>
+          </div>
+          <button class="close-forecasts">x</button>
+          <ul class="forecasts">
+            <!-- <h3 class="date >18/08/2021</h3>
+            <button class="btn-hourly">See Hourly</button>
+            <li class="dat temp">Temperature: 25 &deg;</li>
+            <li class="dat wind-spd">Wind Speed: 25 km/h</li>
+            <li class="dat snow">Snow: 0</li>
+            <li class="dat rain">Rain: 0</li> -->
+          </ul>
+        </div>
+      </div>
+      <div class="astro-container">
+        <h1 class="astro-title">Astronomy Information</h1>
+        <img
+          class="astronomy-main-img"
+          src="./images/astro images/astronomy.jpg"
+          alt="Astronomy"
+        />
+        <ul class="astro-data">
+          <!-- <li class="astro-el">Illumination:</li>
+          <img src="" alt="Illumination" />
+          <li class="astro-el">moonset:</li>
+          <li class="astro-el">moonrise:</li>
+          <li class="astro-el">some:</li>
+          <li class="astro-el">some:</li>
+          <li class="astro-el">Moon phase:</li> -->
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
